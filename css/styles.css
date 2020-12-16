@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.barra {
+    background: linear-gradient(150deg, #716000, #8c8304, #505401);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+    padding: 15px;
+}
+
+@keyframes BgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/*Barra de navegacion*/
+
+.nav {
+    overflow: hidden;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-size: cover;
+    background-color: rgba(202, 193, 193, 0.4);
+}
+
+
+/*Estilos del cuerpo del pagina web. Header*/
+
+.header {
+    background-image: url(../img/header.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 15% 20% 8%;
+    align-items: center;
+}
+
+.header-te {
+    color: black;
+    font-size: 2vw;
+}
+
+.fondo {
+    border-radius: 5px;
+    color: #333;
+    max-width: 100%;
+    padding: 4%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/*Estilos de la pagina seccion 1, */
+
+.two-column {
+    padding: 1% 3% 3%;
+    width: 50%;
+    float: left;
+    height: 100%;
+    align-content: justify;
+}
+
+.two-column img {
+    width: 100%;
+    height: 100%;
+}
+
+#img_1 {
+    padding-top: 12vh;
+}
+
+#section_1 {
+    background-color: rgba(253, 238, 197, 0.925);
+}
+
+
+/*IDs de la pagina*/
+
+#nav {
+    float: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/*Ids de la pagina FIN*/
+
+
+/*Slider*/
+
+.tab {
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: goldenrod;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tab button {
+    border: 0px;
+    width: 24.5%;
+    padding: 7px;
+    background-color: goldenrod;
+}
+
+.tabcontent {
+    display: none;
+    border-radius: 5px;
+}
+
+#mara_3km {
+    display: block;
+}
+
+.tab button:hover {
+    background-color: rgb(202, 121, 0);
+}
+
+.tab button.active {
+    background-color: rgb(182, 111, 4);
+    color: white;
+}
+
+li {
+    padding: 5px 0;
+}
+
+
+/*Fin Slider*/
+
+
+/* ? ----- Cuenta Regresiva ----- */
+
+.one-column {
+    width: 100%;
+    background-color: rgba(253, 238, 197, 0.925);
+    padding: 25px 0 0 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#cuenta_atras {
+    display: flex;
+    justify-content: center;
+    border: 20px black;
+}
+
+.simply-section {
+    background: rgba(255, 255, 255, 0);
+    width: 180px;
+    height: 180px;
+    margin: 0 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid gold;
+}
+
+.simply-amount {
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.simply-word {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+
+/* ? ---------------------------- */
+
+
+/*Seccion 3*/
+
+.three-column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.three-column table {
+    width: 100%;
+}
+
+th,
+td {
+    padding: +4px;
+}
+
+th {
+    background-color: goldenrod;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+@supports (backdrop-filter: none) {
+    .fondo {
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    iframe {
+        height: auto;
+    }
+    .two-column {
+        width: 100%;
+    }
+    .two-column img {
+        padding-top: 0;
+    }
+    .tab button {
+        width: 49%;
+    }
+    .tabcontent {
+        height: 270px;
+    }
+    .tabcontent iframe {
+        height: 100%;
+    }
+}
