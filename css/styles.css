@@ -455,7 +455,7 @@ ul.slider li:target {
     .menu li a {
         width: 24px;
         height: 24px;
-        font-size: 7px;
+        font-size: 20px;
     }
     ul.slider {
         height: 200px;
