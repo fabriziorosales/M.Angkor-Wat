@@ -455,7 +455,7 @@ ul.slider li:target {
     .menu li a {
         width: 24px;
         height: 24px;
-        font-size: 3.7vh;
+        font-size: 3vw;
     }
     ul.slider {
         height: 200px;
@@ -470,6 +470,6 @@ ul.slider li:target {
         height: 400px;
     }
     #discord iframe {
-        height: 90vh;
+        height: 400px;
     }
 }
